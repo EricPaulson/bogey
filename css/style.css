@@ -685,12 +685,12 @@ img {
   }
 
   .logo {
-    padding: 10px 14px 8px;
-    top: 16px;
+    padding: 8px 10px 6px;
+    top: 12px;
   }
 
   .logo-img {
-    height: 80px;
+    height: 56px;
   }
 
   .hero {
@@ -713,9 +713,16 @@ img {
     padding-bottom: 48px;
   }
 
+  /* Brand strip: 2x2 grid on mobile */
   .strip-inner {
-    justify-content: center;
-    gap: 20px 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    justify-items: center;
+  }
+
+  .strip-item {
+    font-size: 0.75rem;
   }
 
   .lifestyle-split {
@@ -752,6 +759,13 @@ img {
     grid-template-columns: 1fr;
     gap: 32px;
   }
+
+  /* Quick view: always show on touch devices */
+  .product-quick-view {
+    transform: translateY(0);
+    padding: 10px;
+    font-size: 0.75rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -762,5 +776,14 @@ img {
 
   .announcement-bar {
     font-size: 0.68rem;
+  }
+
+  .logo {
+    padding: 6px 8px 4px;
+    top: 8px;
+  }
+
+  .logo-img {
+    height: 44px;
   }
 }
