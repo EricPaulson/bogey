@@ -120,6 +120,7 @@ img {
   background: var(--white);
   border-bottom: 1px solid var(--gray-100);
   transition: box-shadow var(--transition);
+  overflow: visible;
 }
 
 .site-header.scrolled {
@@ -134,6 +135,28 @@ img {
   align-items: center;
   justify-content: space-between;
   height: 68px;
+}
+
+.logo {
+  position: relative;
+  z-index: 1001;
+  flex-shrink: 0;
+  background: var(--white);
+  padding: 18px 24px 14px;
+  border-radius: 10px;
+  top: 37px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.logo-img {
+  height: 120px;
+  width: auto;
+  display: block;
+}
+
+.footer-logo-img {
+  height: 104px;
+  width: auto;
 }
 
 .logo-text {
@@ -659,6 +682,15 @@ img {
 
   .nav-links.active {
     display: flex;
+  }
+
+  .logo {
+    padding: 10px 14px 8px;
+    top: 16px;
+  }
+
+  .logo-img {
+    height: 80px;
   }
 
   .hero {

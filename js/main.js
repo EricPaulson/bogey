@@ -10,17 +10,17 @@ window.addEventListener('scroll', () => {
 
 // Mobile menu toggle
 const menuToggle = document.getElementById('menuToggle');
-const navLinks = document.getElementById('navLinks');
+const navLeft = document.getElementById('navLinks');
 
 menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+  navLeft.classList.toggle('active');
   menuToggle.classList.toggle('open');
 });
 
-// Close mobile menu when a link is clicked
-navLinks.querySelectorAll('a').forEach(link => {
+// Close mobile menu when any nav link is clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
-    navLinks.classList.remove('active');
+    navLeft.classList.remove('active');
     menuToggle.classList.remove('open');
   });
 });
